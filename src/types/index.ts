@@ -1,17 +1,15 @@
 import { type } from "arktype";
 
-const Device = type({
-  platform: "'android' | 'ios'",
-  "versions?": "(number | string)[]",
+export const StartTime = type({
+  hour: "number",
+  minute: "number",
+  second: "number",
 });
 
-export const User = type({
-  user_name: "string",
-  first_name: "string",
-  last_name: "string",
-  email: "string",
-  password: "string",
-  phone_number: "string",
+export interface StartTimeInput {
+  hour: number;
+  minute: number;
+  second: number;
+}
 
-  device: Device,
-});
+export type ValidationResult = ReturnType<typeof StartTime>;
