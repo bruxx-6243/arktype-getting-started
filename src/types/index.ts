@@ -1,5 +1,10 @@
 import { type } from "arktype";
 
+const Device = type({
+  platform: "'android' | 'ios'",
+  "versions?": "(number | string)[]",
+});
+
 export const User = type({
   user_name: "string",
   first_name: "string",
@@ -8,8 +13,5 @@ export const User = type({
   password: "string",
   phone_number: "string",
 
-  device: {
-    platform: "'android' | 'ios'",
-    "versions?": "(number | string)[]",
-  },
+  device: Device,
 });
