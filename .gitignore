@@ -1,0 +1,92 @@
+# Node.js and npm related files
+node_modules/
+package-lock.json
+yarn.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# TypeScript build output
+dist/
+out/
+build/
+
+# Compiled JavaScript files
+*.js
+*.js.map
+
+# TypeScript cache files
+*.tsbuildinfo
+
+# Log files
+*.log
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript declaration files
+*.d.ts
+
+# Environment variables
+.env
+.env.*
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# macOS specific files
+.DS_Store
+
+# Linux specific files
+.*.swp
+.*.swo
+
+# Temporary files and directories
+tmp/
+temp/
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Jest snapshots
+__snapshots__/
+
+# Test results
+test-results/
+
+# Configuration files for testing frameworks
+karma.conf.js
+protractor.conf.js
+
+# Documentation
+docs/
+out-doc/
+
+# Serverless directories
+.serverless/
+
+# Firebase
+.firebase/
+
+# Miscellaneous
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+
+# Ignore any custom build artifacts
+*.bak
+*.swp
+
+# Ignore gitkeep files if not needed
+*.gitkeep
+
+# Ignore any specific project files you don't want to track
+# (Add specific files or folders here if needed)
